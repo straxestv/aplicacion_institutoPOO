@@ -5,8 +5,8 @@ CPP      = g++.exe
 CC       = gcc.exe
 WINDRES  = windres.exe
 RES      = 
-OBJ      = Institucionmain.o Alumno.o $(RES)
-LINKOBJ  = Institucionmain.o Alumno.o $(RES)
+OBJ      = Institucionmain.o Alumno.o Grupo.o $(RES)
+LINKOBJ  = Institucionmain.o Alumno.o Grupo.o $(RES)
 LIBS     = -L"lib" -L"lib/gcc" -static-libstdc++ -static-libgcc  
 INCS     = -I"include" 
 CXXINCS  = -I"include"  -I"include/sys"  -I"include/ddk"  -I"include/gdiplus"  -I"include/GL" 
@@ -31,3 +31,6 @@ Institucionmain.o: Institucionmain.cpp
 
 Alumno.o: Alumno.cpp
 	$(CPP) -c Alumno.cpp -o Alumno.o $(CXXFLAGS)
+
+Grupo.o: Grupo.cpp
+	$(CPP) -c Grupo.cpp -o Grupo.o $(CXXFLAGS)
