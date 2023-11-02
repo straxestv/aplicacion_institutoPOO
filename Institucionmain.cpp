@@ -1,12 +1,12 @@
 #include <cstdlib>
 #include <iostream>
 
-#include "Grupo.h"
+#include "Carrera.h"
 
 using namespace std;
 
 int main(int argc, char *argv[]) {
-	Grupo A;
+	Carrera A;
 	
 	A.Leer();
     A.Imprimir();
