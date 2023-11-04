@@ -1,12 +1,12 @@
 #include <cstdlib>
 #include <iostream>
 
-#include "Carrera.h"
+#include "EscuelaSup.h"
 
 using namespace std;
 
 int main(int argc, char *argv[]) {
-	Carrera A;
+	EscuelaSup A;
 	
 	A.Leer();
     A.Imprimir();
