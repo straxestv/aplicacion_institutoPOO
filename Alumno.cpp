@@ -37,16 +37,17 @@ void Alumno :: Leer(){
 
 void Alumno :: Imprimir(){
 	
-	cout << " DATOS DEL ALUMNO " << endl;
 	cout << " ******************************************* " << endl;
 	
-	cout << " Nombre del alumno: " << Nombre << endl;
+	cout << endl << " ===== DATOS DEL ALUMNO ===== " << endl;
 	
-	cout << " Boleta: " << Boleta << endl;
+	cout << " \n Nombre del alumno: " << Nombre << endl;
 	
-	cout << " Promedio: " << Promedio << endl;
+	cout << " \n Boleta: " << Boleta << endl;
 	
-	cout << " Correo electronico: " << Correo << endl;
+	cout << " \n Promedio: " << Promedio << endl;
+	
+	cout << " \n Correo electronico: " << Correo << endl;
 	
 	cout << " ********************************************* " << endl;
 }
