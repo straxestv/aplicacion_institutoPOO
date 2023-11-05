@@ -5,8 +5,8 @@ CPP      = g++.exe
 CC       = gcc.exe
 WINDRES  = windres.exe
 RES      = 
-OBJ      = Institucionmain.o Alumno.o Grupo.o Carrera.o EscuelaSup.o Instituto.o $(RES)
-LINKOBJ  = Institucionmain.o Alumno.o Grupo.o Carrera.o EscuelaSup.o Instituto.o $(RES)
+OBJ      = Institucionmain.o Alumno.o Grupo.o Carrera.o EscuelaSup.o Instituto.o EscuelaMedSup.o AlumnoMS.o GrupoMS.o CarreraMS.o $(RES)
+LINKOBJ  = Institucionmain.o Alumno.o Grupo.o Carrera.o EscuelaSup.o Instituto.o EscuelaMedSup.o AlumnoMS.o GrupoMS.o CarreraMS.o $(RES)
 LIBS     = -L"lib" -L"lib/gcc" -static-libstdc++ -static-libgcc  
 INCS     = -I"include" 
 CXXINCS  = -I"include"  -I"include/sys"  -I"include/ddk"  -I"include/gdiplus"  -I"include/GL" 
@@ -43,3 +43,15 @@ EscuelaSup.o: EscuelaSup.cpp
 
 Instituto.o: Instituto.cpp
 	$(CPP) -c Instituto.cpp -o Instituto.o $(CXXFLAGS)
+
+EscuelaMedSup.o: EscuelaMedSup.cpp
+	$(CPP) -c EscuelaMedSup.cpp -o EscuelaMedSup.o $(CXXFLAGS)
+
+AlumnoMS.o: AlumnoMS.cpp
+	$(CPP) -c AlumnoMS.cpp -o AlumnoMS.o $(CXXFLAGS)
+
+GrupoMS.o: GrupoMS.cpp
+	$(CPP) -c GrupoMS.cpp -o GrupoMS.o $(CXXFLAGS)
+
+CarreraMS.o: CarreraMS.cpp
+	$(CPP) -c CarreraMS.cpp -o CarreraMS.o $(CXXFLAGS)
